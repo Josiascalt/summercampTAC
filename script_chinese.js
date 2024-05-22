@@ -36,14 +36,14 @@ let closeButton = document.querySelector("#windowCloseButton");
         document.getElementById("pricesSection").scrollIntoView({behavior: 'smooth'});
     });
 
+    let leftBarButtonCallUs = document.getElementById("leftBarButtonCallUs");
+    leftBarButtonCallUs.addEventListener("click", () => {
+        window.open("https://line.me/ti/p/7Oik91Y0mQ");
+    });
+
     let leftBarButtonContactUs = document.getElementById("leftBarButtonContactUs");
     leftBarButtonContactUs.addEventListener("click", () => {
         document.getElementById("contactUsSection").scrollIntoView({behavior: 'smooth'});
-    });
-
-    let leftBarButtonCallUs = document.getElementById("leftBarButtonCallUs");
-    leftBarButtonCallUs.addEventListener("click", () => {
-        window.open("https://line.me/ti/p/7YG8hBX78_");
     });
 /*-----give functionality to top bar-----*/
     //modify topBar when scrolling
