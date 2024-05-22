@@ -229,7 +229,7 @@
 	
 	#topBar {
 	width: 100%;
-	height: calc(12px + 5rem);;
+	height: calc(12px + 5rem);
 	position: fixed;
 	z-index: 5;
 	padding: 0 2.5%;
