@@ -36,6 +36,11 @@ let closeButton = document.querySelector("#windowCloseButton");
         document.getElementById("pricesSection").scrollIntoView({behavior: 'smooth'});
     });
 
+    let leftBarButtonCallUs = document.getElementById("leftBarButtonCallUs");
+    leftBarButtonCallUs.addEventListener("click", () => {
+        window.open("https://line.me/ti/p/7Oik91Y0mQ");
+    });
+
     let leftBarButtonContactUs = document.getElementById("leftBarButtonContactUs");
     leftBarButtonContactUs.addEventListener("click", () => {
         document.getElementById("contactUsSection").scrollIntoView({behavior: 'smooth'});
@@ -53,7 +58,7 @@ let closeButton = document.querySelector("#windowCloseButton");
         if (window.scrollY != 0) {
             //modifies topBar
             topBar.style.transition = "transform 0.3s ease 0s, background-color 0.3s ease 0s, opacity 0.3s ease 0s, box-shadow 0.3s ease 0s, border-color 0.3s ease 0s, margin 0.25s ease-out 0s, backdrop-filter 0.25s ease 0s";
-            topBar.style.height = "4rem";
+            topBar.style.height = "calc(12px + 3.5rem)";
             topBar.style.backgroundColor = "white";
             topBar.style.color = "var(--main-title)";
             topBar.style.boxShadow = "0 1px 2vh black";
@@ -69,7 +74,7 @@ let closeButton = document.querySelector("#windowCloseButton");
             topBarElements.forEach((elem) => {
                 elem.style.borderColor = "white";
             });
-            topBar.style.height = "5rem";
+            topBar.style.height = "calc(12px + 3.5rem)";
             topBar.style.transition = "transform 0.3s ease 0s, background-color 0.3s ease 0s, opacity 0.3s ease 0s, box-shadow 0.3s ease 0s, border-color 0.3s ease 0s, margin 0.25s ease-out 0s, backdrop-filter 0.25s ease 0s";
         }
         //change the value
