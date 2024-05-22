@@ -229,16 +229,16 @@
 	
 	#topBar {
 	width: 100%;
-	height: 5rem;
+	height: calc(12px + 5rem);;
 	position: fixed;
 	z-index: 5;
 	padding: 0 2.5%;
 	color: white;
 	}
 		.title {
-			width: 10rem;
-			min-width: 10rem;
-			height: 3rem;
+			width: calc(14rem + 12px);
+			min-width: calc(12px + 1rem);
+			height: calc(12px + 3.5rem);
 			cursor: pointer;
 	
 		}
@@ -255,14 +255,14 @@
 						.title > .flexVerticalCenter > h2 {
 							width: 100%;
 							font-weight: 600;
-							font-size: 0.5rem;
+							font-size: calc(3px + 0.5rem);
 	
 						}
 	
 						.title > .flexVerticalCenter > h1 {
 							width: 100%;
 							font-weight: 400;
-							font-size: 0.9rem;
+							font-size: calc(5px + 0.5rem);;
 						}
 	
 		#topBar > ul {
@@ -329,6 +329,7 @@
 					width: 95%;
 					position: absolute;
 					top: 20%;
+					text-align: center;
 
 				}
 	
@@ -352,6 +353,7 @@
 							margin: 1rem 2.5%;
 							background-color: white;
 							cursor: pointer;
+							
 						}
 
 								#homeSection > .flexCenter > .mainShapeRight > img,
@@ -406,7 +408,7 @@
 						.titleSection {
 							width: 100%;
 							text-align: center;
-							font-size: 4rem;
+							font-size: calc(12px + 3.25rem);
 							font-weight: 500;
 							margin-bottom: 5rem;
 						}
@@ -414,7 +416,7 @@
 						.titleContent {
 							width: 100%;
 							text-align: left;
-							font-size: 3rem;
+							font-size: calc(12px + 2.5rem);
 							font-weight: 500;
 							margin-bottom: 2rem;
 						}
@@ -422,7 +424,7 @@
 						.descriptionContent {
 							width: 100%;
 							text-align: left;
-							font-size: 1.25rem;
+							font-size: calc(12px + 0.5rem);
 							font-weight: 400;
 						}
 
@@ -438,7 +440,7 @@
 	
 						.sectionFooter {
 							width: 100%;
-							font-size: 1.25rem;
+							font-size: calc(12px + 0.5rem);
 							margin-top: 2.5rem;
 						}
 /*------ basic section box - end ------*/
@@ -481,8 +483,8 @@
 /*------ dates/prices box - begin ------*/
 	
 						.priceBox {    
-							height: 21.5rem;
-							width: 23rem;
+							height: 30rem;
+							width: 32rem;
 							margin: 0 3rem 3rem 3rem;
 							background-color: var(--details);
 							box-shadow: 1px 1px 7px black;
@@ -496,7 +498,7 @@
 								}
 	
 										.priceLabel {
-											font-size: 1.5rem;
+											font-size: 3rem;
 											font-weight: 500;
 										}
 	
@@ -513,7 +515,7 @@
 														}
 	
 														.dateElemMonth, .dateElemYear {
-															font-size: 1.4rem;
+															font-size: 2rem;
 															font-weight: 300;
 														}
 	
@@ -525,7 +527,7 @@
 										.priceBoxContent > .enrolNowButton {
 											width: 100%;
 											height: 4rem;
-											font-size: 1.4rem;
+											font-size: 2rem;
 										}
 	
 												.priceBoxContent > .enrolNowButton:hover {
@@ -553,7 +555,7 @@
 				height: 20%;
 				position: absolute;
 				top: 0;
-				font-size: 4rem;
+				font-size: calc(12px + 2.5rem);
 			}
 
 			#carrousel > .blurStyleReverse {
@@ -561,7 +563,7 @@
 				height: 30%;
 				position: absolute;
 				bottom: 0;
-				font-size: 1.75rem;
+				font-size: calc(12px + 0.7rem);
 			}
 
 			#carrouselScreen {
@@ -605,9 +607,10 @@
 }
 
 #contactUsSection > .splitBackGroundBox > .flexVerticalCenter > .enrolNowButton {
-	width: 15rem;
+	width: 22rem;
+	height: 4.5rem;
 	font-weight: 600;
-	font-size: 1.25rem;
+	font-size: 2rem;
 	margin-top: 3rem;
 	align-self: start;
 }
