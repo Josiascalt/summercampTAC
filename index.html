@@ -28,6 +28,12 @@
 					position: absolute;
 					left: 2.5%;
 				}
+
+				#openUpcomingMenuButton {
+					display: block;
+				}
+
+
 			}
 
 			@media screen and (max-width: 1000px) {
@@ -105,6 +111,9 @@
 						width: 90%;
 
 					}
+				#upcomingMenu {
+					width: 100%;
+				}
 			}
 
 		</style>
@@ -118,6 +127,38 @@
 			</div>
 		</div>
 	<!-- template of window - end-->
+	<!-- upcoming menu - begin-->
+		<span id="openUpcomingMenuButton"><img src="https://i.pinimg.com/originals/26/9d/d1/269dd16fa1f5ff51accd09e7e1602267.png"></span>
+		<div class="lightHardStyle" id="upcomingMenu">
+			<div class="flexCenter" style="height: calc(12px + 3.5rem); width: 100%; position: absolute; top: 0;">
+				<span class="flexCenter" id="closeUpcomingMenuButton"><</span>
+			</div>
+			<div class="flexVerticalCenter" style="height: calc(100% - (12px + 3.5rem)); width: 100%; position: absolute; top: calc(12px + 3.5rem);">
+				<ul class="flexVerticalCenter" style="cursor: pointer;">
+					<li class="upcomingMenuElements buttonHome">
+						HOME
+					</li>
+					<li class="upcomingMenuElements buttonAboutUs">
+						ABOUT US
+					</li>
+					<li class="upcomingMenuElements buttonWhyThisCamp">
+						WHY THIS CAMP
+					</li>
+					<li class="upcomingMenuElements buttonDates">
+						DATES AND PRICING
+					</li>
+					<li class="upcomingMenuElements buttonContact" style="border: 0;">
+						CONTACT
+					</li>
+					<li class="upcomingMenuElements flexCenter buttonLanguage" style="margin-top: 5rem;">
+						<img class="languageFlag" style="width: calc(12px + 2rem);" src=".\src\icons\taiwan_flag.png">
+						<h3 class="upcomingMenuElements">中文</h3>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+	<!-- upcoming menu - end-->
 	<!-- Top bar - begin-->
 		<nav class="flexCenter" id="topBar">
 			<div class="title flexCenter">
@@ -128,27 +169,27 @@
 				</div>
 			</div>
 			<ul class="flexCenter">
-				<li class="topBarElements" id="topBarButtonHome">
+				<li class="topBarElements buttonHome">
 					HOME
 				</li>
-				<li class="topBarElements" id="topBarButtonAboutUs">
+				<li class="topBarElements buttonAboutUs">
 					ABOUT US
 				</li>
-				<li class="topBarElements" id="topBarButtonWhyThisCamp">
+				<li class="topBarElements buttonWhyThisCamp">
 					WHY THIS CAMP
 				</li>
-				<li class="topBarElements" id="topBarButtonDates">
+				<li class="topBarElements buttonDates">
 					DATES AND PRICING
 				</li>
-				<li class="topBarElements" id="topBarButtonContact" style="border: 0;">
+				<li class="topBarElements buttonContact" class="" style="border: 0;">
 					CONTACT
 				</li>
 				<li class="topBarElements enrolNowButton darkSoftStyle buttonShapeLeft flexCenter">
 					ENROL NOW
 				</li>
-				<li class="topBarElements flexCenter" id="topBarButtonLanguage" style="border: 0;">
-					<img id="languageFlagBarTop" src=".\src\icons\british_flag.png">
-					<h3 id="languageLableBarTop">ENG</h3>
+				<li class="topBarElements flexCenter buttonLanguage" style="border: 0;">
+					<img class="languageFlag" src=".\src\icons\taiwan_flag.png">
+					<h3 class="languageLable">中文</h3>
 				</li>
 			</ul>
 
@@ -199,7 +240,7 @@
 	<!-- introduction -->
 		<section class="outerContentBox flexCenter lightSoftStyle" id="introductionSection" style="flex-wrap: wrap; padding: 0;">
 			<div class="splitBackGroundBox flexCenter darkSoftStyle">
-				<div class="tag lightGlassStyle flexCenter">#since2020</div>
+				<div class="tag lightGlassStyle flexCenter">#SUMMER</div>
 				<div class="mainShapeRight flexCenter">
 					<img src=".\src\img\about_us.jpg">
 				</div>
@@ -208,7 +249,7 @@
 				<img id="quotes" src=".\src\icons\quotes.svg">	
 				<div class="flexCenter" style="flex-wrap: wrap;">
 					<h3 class="titleContent">The Best Western Style Camp in Taiwan</h3>
-					<p class="descriptionContent">Welcome to Taiwan Adventist College.... Some really good stuff should be here as long as this is the first impression of the website visitors </p>
+					<p class="descriptionContent">Welcome to our summer camp homepage! We look forward to seeing you at our camp to experience the fun of learning English with native speakers in beautiful surroundings. Come along and join us! We are waiting to welcome you!</p>
 				</div>
 			</div>
 		</section>
@@ -338,8 +379,8 @@
 					<p class="descriptionContent">Chungwen Lane 39</p>
 					<p class="descriptionContent">Yuchih 55542 Nantou County,</p>
 					<p class="descriptionContent">Taiwan (ROC)</p>
-					<p class="descriptionContent">+886 (049) 2896783</p>
-					<p class="descriptionContent">email@official.tw</p>
+					<p class="descriptionContent">+886 0908 261 071</p>
+					<p class="descriptionContent">tanglee1231@gmail.com</p>
 					<div class="enrolNowButton buttonShapeRight flexCenter specialStyle">ENROL NOW</div>
 				</div>
 				
