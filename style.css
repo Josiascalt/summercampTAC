@@ -224,7 +224,46 @@
 					font-weight: 400;
 				}
 /*------left bar - end ------*/
-	
+/*------ upcoming menu - begin ------*/
+	#upcomingMenu {
+		height: 100vh;
+		width: 400px;
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 10;
+		box-shadow: 0 1px 2vh black;
+		display: none;
+	}
+
+			#openUpcomingMenuButton {
+				width: calc(12px + 2rem);
+				position: fixed;
+				top: calc(6px + 0.5rem);
+				right: 2.5%;
+				z-index: 6;
+				display: none;
+				cursor: pointer;
+			}
+
+					#openUpcomingMenuButton > img {
+						width: 100%;
+					}
+
+			#closeUpcomingMenuButton {
+				font-family: manrope; 
+				font-size: 3.5rem;
+				cursor: pointer;
+				position: absolute;
+				left: 5%;
+			}
+			
+			.upcomingMenuElements {
+				margin: 1rem 0;
+				font-size: calc(12px + 1rem);
+				
+			}
+/*------ upcoming menu - end ------*/	
 /*------ top bar - begin ------*/
 	
 	#topBar {
@@ -262,7 +301,7 @@
 						.title > .flexVerticalCenter > h1 {
 							width: 100%;
 							font-weight: 400;
-							font-size: calc(5px + 0.5rem);;
+							font-size: calc(5px + 0.5rem);
 						}
 	
 		#topBar > ul {
@@ -295,13 +334,13 @@
 					
 				}*/
 	
-						#languageFlagBarTop {
-							height: 1rem;
+				.languageFlag {
 							width: 2rem;
+							aspect-ratio: 2/1;
 							margin-right: 10px;
 						}
 	
-						#languageLableBarTop {
+				.languageLable {
 							font-weight: 400;
 							font-size: 1rem;
 						}
