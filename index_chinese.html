@@ -28,6 +28,12 @@
 					position: absolute;
 					left: 2.5%;
 				}
+
+				#openUpcomingMenuButton {
+					display: block;
+				}
+
+
 			}
 
 			@media screen and (max-width: 1000px) {
@@ -105,6 +111,9 @@
 						width: 90%;
 
 					}
+				#upcomingMenu {
+					width: 100%;
+				}
 			}
 
 		</style>
@@ -118,37 +127,69 @@
 			</div>
 		</div>
 	<!-- template of window - end-->
+	<!-- upcoming menu - begin-->
+		<span id="openUpcomingMenuButton"><img src="https://i.pinimg.com/originals/26/9d/d1/269dd16fa1f5ff51accd09e7e1602267.png"></span>
+		<div class="lightHardStyle" id="upcomingMenu">
+			<div class="flexCenter" style="height: calc(12px + 3.5rem); width: 100%; position: absolute; top: 0;">
+				<span class="flexCenter" id="closeUpcomingMenuButton"><</span>
+			</div>
+			<div class="flexVerticalCenter" style="height: calc(100% - (12px + 3.5rem)); width: 100%; position: absolute; top: calc(12px + 3.5rem);">
+				<ul class="flexVerticalCenter" style="cursor: pointer;">
+					<li class="upcomingMenuElements buttonHome">
+						家
+					</li>
+					<li class="upcomingMenuElements buttonAboutUs">
+						關於我們
+					</li>
+					<li class="upcomingMenuElements buttonWhyThisCamp">
+						為什麼要參加這個訓練營
+					</li>
+					<li class="upcomingMenuElements buttonDates">
+						日期和定價
+					</li>
+					<li class="upcomingMenuElements buttonContact" style="border: 0;">
+						接觸
+					</li>
+					<li class="upcomingMenuElements flexCenter buttonLanguage" style="margin-top: 5rem;">
+						<img class="languageFlag" style="width: calc(12px + 2rem);" src=".\src\icons\british_flag.png">
+						<h3 class="upcomingMenuElements">ENG</h3>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+	<!-- upcoming menu - end-->
 	<!-- Top bar - begin-->
 		<nav class="flexCenter" id="topBar">
 			<div class="title flexCenter">
 				<img src=".\src\icons\logo_tac.png">
 				<div class="flexVerticalCenter">
 					<h2>Taiwan Adventist College</h2>
-					<h1>夏令營</h1>
+					<h1>SUMMER CAMP</h1>
 				</div>
 			</div>
 			<ul class="flexCenter">
-				<li class="topBarElements" id="topBarButtonHome">
+				<li class="topBarElements buttonHome">
 					家
 				</li>
-				<li class="topBarElements" id="topBarButtonAboutUs">
+				<li class="topBarElements buttonAboutUs">
 					關於我們
 				</li>
-				<li class="topBarElements" id="topBarButtonWhyThisCamp">
+				<li class="topBarElements buttonWhyThisCamp">
 					為什麼要參加這個訓練營
 				</li>
-				<li class="topBarElements" id="topBarButtonDates">
+				<li class="topBarElements buttonDates">
 					日期和定價
 				</li>
-				<li class="topBarElements" id="topBarButtonContact" style="border: 0;">
+				<li class="topBarElements buttonContact" class="" style="border: 0;">
 					接觸
 				</li>
 				<li class="topBarElements enrolNowButton darkSoftStyle buttonShapeLeft flexCenter">
 					立即報名
 				</li>
-				<li class="topBarElements flexCenter" id="topBarButtonLanguage" style="border: 0;">
-					<img id="languageFlagBarTop" src=".\src\icons\taiwan_flag.png">
-					<h3 id="languageLableBarTop">中文</h3>
+				<li class="topBarElements flexCenter buttonLanguage" style="border: 0;">
+					<img class="languageFlag" src=".\src\icons\british_flag.png">
+					<h3 class="languageLable">ENG</h3>
 				</li>
 			</ul>
 
@@ -338,8 +379,8 @@
 					<p class="descriptionContent">忠文巷39號</p>
 					<p class="descriptionContent">魚池 55542 南投縣,</p>
 					<p class="descriptionContent">台灣（中華民國）</p>
-					<p class="descriptionContent">+886 (049) 2896783</p>
-					<p class="descriptionContent">電子郵件@official.tw</p>
+					<p class="descriptionContent">+886 0908 261 071</p>
+					<p class="descriptionContent">tanglee1231@gmail.com</p>
 					<div class="enrolNowButton buttonShapeRight flexCenter specialStyle">立即報名</div>
 				</div>
 				
