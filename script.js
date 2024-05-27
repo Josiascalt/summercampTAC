@@ -82,31 +82,64 @@ let closeButton = document.querySelector("#windowCloseButton");
         
     });
 
+    let openMenu = document.getElementById("openUpcomingMenuButton");
+    let closeMenu = document.getElementById("closeUpcomingMenuButton");
+    let upcomingMenu = document.getElementById("upcomingMenu");
+
+    openMenu.addEventListener("click", () => {
+        upcomingMenu.style.display = "flex";
+    });
+
+    closeMenu.addEventListener("click", () => {
+        upcomingMenu.style.display = "none";
+    });
+
     //top bar buttons function
-    let topBarButtonHome = document.getElementById("topBarButtonHome");
-    topBarButtonHome.addEventListener("click", () => {
-        document.getElementById("homeSection").scrollIntoView({behavior: 'smooth'});
+    let buttonHome = document.querySelectorAll(".buttonHome");
+
+    buttonHome.forEach((elem) => {
+        elem.addEventListener("click", () => {
+            upcomingMenu.style.display = "none";
+            document.getElementById("homeSection").scrollIntoView({behavior: 'smooth'});
+        });
     });
 
-    let topBarButtonAboutUs = document.getElementById("topBarButtonAboutUs");
-    topBarButtonAboutUs.addEventListener("click", () => {
-        document.getElementById("introductionSection").scrollIntoView({behavior: 'smooth'});
+    let buttonAboutUs = document.querySelectorAll(".buttonAboutUs");
+    buttonAboutUs.forEach((elem) => {
+        elem.addEventListener("click", () => {
+            upcomingMenu.style.display = "none";
+            document.getElementById("introductionSection").scrollIntoView({behavior: 'smooth'});
+        });
+    });
+    
+
+    let buttonWhyThisCamp = document.querySelectorAll(".buttonWhyThisCamp");
+    buttonWhyThisCamp.forEach((elem) => {
+        elem.addEventListener("click", () => {
+            upcomingMenu.style.display = "none";
+            document.getElementById("whyThisCampSection").scrollIntoView({behavior: 'smooth'});
+        });
     });
 
-    let topBarButtonWhyThisCamp = document.getElementById("topBarButtonWhyThisCamp");
-    topBarButtonWhyThisCamp.addEventListener("click", () => {
-        document.getElementById("whyThisCampSection").scrollIntoView({behavior: 'smooth'});
+    let buttonDates = document.querySelectorAll(".buttonDates");
+    buttonDates.forEach((elem) => {
+        elem.addEventListener("click", () => {
+            upcomingMenu.style.display = "none";
+            document.getElementById("pricesSection").scrollIntoView({behavior: 'smooth'});
+        });
     });
 
-    let topBarButtonDates = document.getElementById("topBarButtonDates");
-    topBarButtonDates.addEventListener("click", () => {
-        document.getElementById("pricesSection").scrollIntoView({behavior: 'smooth'});
+
+    let buttonContact = document.querySelectorAll(".buttonContact");
+    buttonContact.forEach((elem) => {
+        elem.addEventListener("click", () => {
+            upcomingMenu.style.display = "none";
+            document.getElementById("contactUsSection").scrollIntoView({behavior: 'smooth'});
+        });
     });
 
-    let topBarButtonContact = document.getElementById("topBarButtonContact");
-    topBarButtonContact.addEventListener("click", () => {
-        document.getElementById("contactUsSection").scrollIntoView({behavior: 'smooth'});
-    });
+
+
 
     /*
     topBarButtonLanguage
@@ -114,22 +147,14 @@ let closeButton = document.querySelector("#windowCloseButton");
 
     //change the language of the button language when the mouse is over the element
     let flags = [".\\src\\icons\\british_flag.png", ".\\src\\icons\\taiwan_flag.png"];
-    let languageButton = document.querySelector("#topBarButtonLanguage");
-    let languageLable = document.querySelector("#languageLableBarTop");
-    let languageFlag = document.querySelector("#languageFlagBarTop");
+    let languageButton = document.querySelectorAll(".buttonLanguage");
+    let languageLable = document.querySelectorAll(".languageLable");
+    let languageFlag = document.querySelectorAll(".languageFlag");
 
-    languageButton.addEventListener("mouseover", () => {
-        languageLable.innerHTML = "中文";
-        languageFlag.setAttribute("src", flags[1]); 
-    });
-
-    languageButton.addEventListener("mouseout", () => {
-        languageLable.innerHTML = "ENG";
-        languageFlag.setAttribute("src", flags[0]);
-    });
-
-    languageButton.addEventListener("click", () => {
-        window.open("index_chinese.html", "_self");
+    languageButton.forEach((elem) => {
+        elem.addEventListener("click", () => {
+            window.open("index_chinese.html", "_self");
+        });
     });
 
 /*-----give functionality to home-----*/
