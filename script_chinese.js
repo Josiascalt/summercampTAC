@@ -158,7 +158,7 @@ let closeButton = document.querySelector("#windowCloseButton");
 
 /*-----give functionality to home-----*/
     //open a new tab to show a form to enrol
-    let linkToEnrolForm = "https://docs.google.com/forms/d/e/1FAIpQLScUlInNlDzNWmYRKN7m6ERPBiWqA_2ND8JAkiSRqbJmqHZAYA/viewform";
+    let linkToEnrolForm = "https://docs.google.com/forms/d/e/1FAIpQLSdWI6jQaEU9jR6HcLN1OlF1Hs6dPdjJAgo_qLXHjHY3Um3PUw/viewform";
     let enrolNowButton = document.querySelectorAll(".enrolNowButton");
 
     enrolNowButton.forEach((elem) => {
