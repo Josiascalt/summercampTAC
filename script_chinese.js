@@ -176,7 +176,7 @@ let closeButton = document.querySelector("#windowCloseButton");
     });
 
     //open a new tab to show our campus
-    let linkToCampus = "https://www.sdatac.org.tw/en/dormitory/";
+    let linkToCampus = "https://www.sdatac.org.tw/school-tour/";
     let ourCampusLink = document.querySelector("#ourCampusLink");
 
     ourCampusLink.addEventListener("click", () => {
@@ -203,8 +203,8 @@ let closeButton = document.querySelector("#windowCloseButton");
 /*-----give functionality to Carrousel-----*/
     //save links and names
     const pictures = [".\\src\\img\\0.jpg", ".\\src\\img\\1.jpg", ".\\src\\img\\2.jpg", ".\\src\\img\\3.jpg", ".\\src\\img\\4.jpg"];
-    const titles = ["持續一生的價值觀", "更好的方法帶來更好的結果", "學習英語的最佳環境", "只有留下難忘經歷的空間", "學習可以透過多種方式進行"];
-    const descriptions = ["這個營地不僅是學習英語的好地方, 是一個透過娛樂活動鼓勵價值觀和強化品格的地方.", "較小的群體移動速度較快. 課程採美式教學風格，小班制學習.", "外籍英語母語的教師授課，每班皆有助教陪同協助.", "課程多元豐富，結合室內課程及戶外課程，幫助孩子學習更全面.", "室內課程含英文學習、營養烹飪、創意美術、環境教育。戶外課程含探索教育、攀樹體驗教育、森林環境探險、體能運動."];
+    const titles = ["持續一生的價值觀", "更好的方法帶來更好的結果", "學習英語的最佳環境", "能留下美好的回憶", "學習可以透過多種方式進行"];
+    const descriptions = ["這個營會不僅是學習英文的好地方，更是一個透過娛樂活動，鼓勵價值觀和強化品格的好地方, 是一個透過娛樂活動鼓勵價值觀和強化品格的地方.", "較小的群體移動速度較快. 課程採美式教學風格，小班制學習.", "外籍英語母語的教師授課，每班皆有助教陪同協助.", "課程多元豐富，結合室內課程及戶外課程，幫助孩子學習更全面.", "室內課程含英文學習、營養烹飪、創意美術、環境教育。戶外課程含探索教育、攀樹體驗教育、森林環境探險、體能運動."];
 
     //DOM elements
     const carrouselScreen = document.querySelector("#carrouselScreen");
@@ -238,7 +238,7 @@ let closeButton = document.querySelector("#windowCloseButton");
         }
 
         if (autoSwitch) {
-            setTimeout(carrouselNextValue, 3000);
+            setTimeout(carrouselNextValue, 6000);
         }
     }
 
